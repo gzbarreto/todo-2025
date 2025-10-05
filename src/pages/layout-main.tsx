@@ -1,13 +1,11 @@
 import { NavLink, Outlet } from "react-router"
-import Container from "../components/container"
 import Text from "../components/text"
+import Header from "../core-components/header"
 
 export default function LayoutMain() {
   return (
     <>
-      <Container as="header" className="mt-3 md:mt-20">
-        Hello World HEADER
-      </Container>
+      <Header />
       <main className="md:mt-8 mt-4">
         <Outlet />
       </main>
